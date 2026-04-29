@@ -3,37 +3,82 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>JSO Solutions — Products</title>
+  <title>Products — JSO Solutions</title>
+  <meta name="description" content="JSO Solutions products: Linkside link management and analytics tool for teams." />
+  <link rel="canonical" href="https://www.jsotechsolutions.com/products/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jsotechsolutions.com/products/" />
+  <meta property="og:title" content="Products — JSO Solutions" />
+  <meta property="og:description" content="Software tools built by JSO Solutions, including Linkside link management and analytics." />
+  <meta property="og:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Products — JSO Solutions" />
+  <meta name="twitter:description" content="Software tools built by JSO Solutions, including Linkside link management and analytics." />
+  <meta name="twitter:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html"><img src="/assets/images/logo.svg" alt="JSO Solutions logo" /></a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <a class="brand" href="/index.html">
+        <picture>
+          <source type="image/webp" srcset="/assets/images/optimized/jsosolutions1-640w.webp 640w, /assets/images/optimized/jsosolutions1-320w.webp 320w" sizes="200px">
+          <img src="/assets/images/optimized/jsosolutions1-320w.jpg" srcset="/assets/images/optimized/jsosolutions1-640w.jpg 2x" alt="JSO Solutions" height="64" style="width:auto;">
+        </picture>
+      </a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/products/index.html">Products</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/clients.html">Clients</a></li>
+          <li class="nav-cta"><a href="/contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <div class="page-hero">
+      <div class="container">
+        <h1>Products</h1>
+        <p>Software tools built by JSO Solutions for teams that value simplicity and speed.</p>
+      </div>
+    </div>
+    <div class="page-body">
     <div class="container">
-      <h1>Products</h1>
-      <ul>
-        <li><a href="/products/linkside/index.html">Linkside</a> — Link management and analytics tool.</li>
-      </ul>
+      <div class="cards">
+        <article class="card">
+          <div class="card-icon">⛳</div>
+          <h3>Linkside</h3>
+          <p>Golf tee time scheduling for iOS. Create a round, invite your crew by text, and track RSVPs — all in under 60 seconds.</p>
+          <a class="card-link" href="/products/linkside/index.html">Learn more →</a>
+        </article>
+      </div>
+    </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 JSO Solutions</p>
+      <nav class="footer-links"><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/clients.html">Clients</a><a href="/products/index.html">Products</a><a href="/contact.html">Contact</a><a href="/products/linkside/terms.html">Legal</a></nav>
+      <p>&copy; 2026 JSO Solutions. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
 </body>
 </html>

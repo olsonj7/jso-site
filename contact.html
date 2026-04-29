@@ -3,48 +3,97 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>JSO Solutions — Contact</title>
+  <title>Contact — JSO Solutions</title>
+  <meta name="description" content="Contact JSO Solutions to discuss IT consulting, AI strategy, data warehouse design, or any technology project." />
+  <link rel="canonical" href="https://www.jsotechsolutions.com/contact.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jsotechsolutions.com/contact.html" />
+  <meta property="og:title" content="Contact — JSO Solutions" />
+  <meta property="og:description" content="Reach out to discuss your IT consulting, AI, or data project. We respond within one business day." />
+  <meta property="og:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — JSO Solutions" />
+  <meta name="twitter:description" content="Reach out to discuss your IT consulting, AI, or data project." />
+  <meta name="twitter:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
   <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html"><img src="/assets/images/logo.svg" alt="JSO Solutions logo" /></a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <a class="brand" href="/index.html">
+        <picture>
+          <source type="image/webp" srcset="/assets/images/optimized/jsosolutions1-640w.webp 640w, /assets/images/optimized/jsosolutions1-320w.webp 320w" sizes="200px">
+          <img src="/assets/images/optimized/jsosolutions1-320w.jpg" srcset="/assets/images/optimized/jsosolutions1-640w.jpg 2x" alt="JSO Solutions" height="64" style="width:auto;">
+        </picture>
+      </a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/products/index.html">Products</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/clients.html">Clients</a></li>
+          <li class="nav-cta"><a href="/contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div class="container">
-      <h1>Contact JSO Solutions</h1>
-      <p>For inquiries, email <a href="mailto:info@jsotechsolutions.com">info@jsotechsolutions.com</a> or use the form below.</p>
+    <div class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Reach out to discuss your project, ask a question, or request a reference.</p>
+      </div>
+    </div>
+    <div class="page-body">
+    <div class="container contact-wrap">
+      <p>Email us directly at <a href="mailto:info@jsotechsolutions.com">info@jsotechsolutions.com</a>, or fill out the form below and we'll respond within one business day.</p>
 
-      <form method="post" action="mailto:info@jsotechsolutions.com" enctype="text/plain">
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text" />
-
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message"></textarea>
-
-        <button type="submit">Send</button>
+      <form id="contact-form" class="form-grid" method="post" action="https://formspree.io/f/maqadjpz" novalidate>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" placeholder="Your name" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="you@company.com" />
+        </div>
+        <div>
+          <label for="company">Company <span style="font-weight:400;color:#5a6478">(optional)</span></label>
+          <input id="company" name="company" type="text" autocomplete="organization" placeholder="Your organization" />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell us about your project or question…"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-submit">Send Message</button>
+        </div>
       </form>
+    </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 JSO Solutions</p>
+      <nav class="footer-links"><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/clients.html">Clients</a><a href="/products/index.html">Products</a><a href="/contact.html">Contact</a><a href="/products/linkside/terms.html">Legal</a></nav>
+      <p>&copy; 2026 JSO Solutions. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
 </body>
 </html>

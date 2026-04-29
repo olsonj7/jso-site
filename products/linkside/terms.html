@@ -9,29 +9,57 @@
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html"><img src="/assets/images/logo.svg" alt="JSO Solutions logo" /></a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <a class="brand" href="/index.html">
+        <picture>
+          <source type="image/webp" srcset="/assets/images/optimized/jsosolutions1-640w.webp 640w, /assets/images/optimized/jsosolutions1-320w.webp 320w" sizes="200px">
+          <img src="/assets/images/optimized/jsosolutions1-320w.jpg" srcset="/assets/images/optimized/jsosolutions1-640w.jpg 2x" alt="JSO Solutions" height="64" style="width:auto;">
+        </picture>
+      </a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/products/index.html">Products</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/clients.html">Clients</a></li>
+          <li class="nav-cta"><a href="/contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <div class="page-hero">
+      <div class="container">
+        <h1>Linkside — Terms of Service</h1>
+      </div>
+    </div>
+    <div class="page-body">
     <div class="container">
-      <h1>Linkside — Terms</h1>
       <p>This is a placeholder for Linkside terms. Replace with actual legal text.</p>
+    </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 JSO Solutions</p>
+      <nav class="footer-links"><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/clients.html">Clients</a><a href="/products/index.html">Products</a><a href="/contact.html">Contact</a><a href="/products/linkside/terms.html">Legal</a></nav>
+      <p>&copy; 2026 JSO Solutions. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
 </body>
 </html>

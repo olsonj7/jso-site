@@ -9,7 +9,7 @@ Files added:
 - `products/index.html` — products list
 - `products/linkside/` — Linkside product page and legal stubs
 - `assets/css/style.css` — site stylesheet (update the color variables)
-- `assets/images/logo.svg` — placeholder logo (replace with your logo)
+ - `assets/images/JSOSolutions1.jpg` — site logo (replace with your logo)
 
 Preview locally:
 
@@ -19,7 +19,7 @@ python3 -m http.server 8000
 ```
 
 Next steps:
-- Replace `assets/images/logo.svg` with the invoice/logo you mentioned.
+- Replace `assets/images/JSOSolutions1.jpg` with the invoice/logo you mentioned.
 - Update the color variables at the top of `assets/css/style.css` to match your invoice branding.
 - Replace the placeholder legal text in `products/linkside/terms.html` and `privacy.html` with the real documents.
 

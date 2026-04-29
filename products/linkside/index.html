@@ -3,41 +3,157 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Linkside — JSO Solutions</title>
+  <title>Linkside — Fill Your Tee Time Fast</title>
+  <meta name="description" content="Linkside is an iOS app that makes golf tee time scheduling effortless. Create a tee time, invite your crew by text, and see who's in — all in under a minute." />
+  <link rel="canonical" href="https://www.jsotechsolutions.com/products/linkside/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jsotechsolutions.com/products/linkside/" />
+  <meta property="og:title" content="Linkside — Fill Your Tee Time Fast" />
+  <meta property="og:description" content="Create a tee time, invite your golf crew by text, and track who's in — all in under 60 seconds." />
+  <meta property="og:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <style>
+    .linkside-hero {
+      background: linear-gradient(135deg, #184D3B 0%, #0f3328 100%);
+      padding: 5rem 0;
+      text-align: center;
+    }
+    .linkside-hero h1 { color: #fff; font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; }
+    .linkside-hero p { color: rgba(255,255,255,0.82); max-width: 560px; margin: 0 auto 2rem; font-size: 1.1rem; }
+    .app-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: #fff; color: #184D3B;
+      padding: 0.65rem 1.4rem; border-radius: 8px;
+      font-weight: 700; font-size: 0.95rem;
+      text-decoration: none;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.2);
+      transition: opacity 0.2s;
+    }
+    .app-badge:hover { opacity: 0.88; }
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin: 2.5rem 0;
+    }
+    .feature-item {
+      padding: 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: #fff;
+    }
+    .feature-item .fi-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+    .feature-item h3 { color: #184D3B; font-size: 1rem; margin-bottom: 0.4rem; }
+    .feature-item p { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
+    .legal-links { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--border); }
+    .legal-links a { margin-right: 1.5rem; color: var(--muted); font-size: 0.9rem; }
+    .legal-links a:hover { color: #184D3B; }
+  </style>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="/index.html"><img src="/assets/images/logo.svg" alt="JSO Solutions logo" /></a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <a class="brand" href="/index.html">
+        <picture>
+          <source type="image/webp" srcset="/assets/images/optimized/jsosolutions1-640w.webp 640w, /assets/images/optimized/jsosolutions1-320w.webp 320w" sizes="200px">
+          <img src="/assets/images/optimized/jsosolutions1-320w.jpg" srcset="/assets/images/optimized/jsosolutions1-640w.jpg 2x" alt="JSO Solutions" height="64" style="width:auto;">
+        </picture>
+      </a>
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/products/index.html">Products</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/clients.html">Clients</a></li>
+          <li class="nav-cta"><a href="/contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
+    <div class="linkside-hero">
+      <div class="container">
+        <h1>⛳ Linkside</h1>
+        <p>Fill your tee time fast. Create a round, invite your crew by text, and see who's in — all in under 60 seconds.</p>
+        <a class="app-badge" href="https://apps.apple.com" aria-label="Download on the App Store">
+          🍎 Download on the App Store
+        </a>
+      </div>
+    </div>
+
+    <div class="page-body">
     <div class="container">
-      <h1>Linkside</h1>
-      <p>Linkside is a link management and analytics product by JSO Solutions.</p>
-      <h2>Legal & documentation</h2>
-      <ul>
-        <li><a href="/products/linkside/terms.html">Terms</a></li>
-        <li><a href="/products/linkside/privacy.html">Privacy Policy</a></li>
-        <li><a href="/products/linkside/license.txt">License</a></li>
-      </ul>
+
+      <div class="section-heading" style="margin-top:1rem;">
+        <span class="eyebrow">How It Works</span>
+        <h2 style="color:#184D3B;">Golf scheduling that actually works</h2>
+        <p>Stop chasing your group in a text thread. Linkside handles invites, RSVPs, and headcounts automatically.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-item">
+          <div class="fi-icon">🔍</div>
+          <h3>Search Any Course</h3>
+          <p>Find any golf course in the US by name or near your location. Powered by live course data, not a manual text field.</p>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">📅</div>
+          <h3>Pick Your Date &amp; Time</h3>
+          <p>Set your tee time in seconds with clean pickers. Defaults to a standard foursome — adjust as needed.</p>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">📲</div>
+          <h3>Invite by Text</h3>
+          <p>Your friends get a text invite automatically. They don't need the app — they just reply. No downloading required.</p>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">✅</div>
+          <h3>Live RSVP Tracking</h3>
+          <p>See who's In, Out, or Maybe in real time. A "FULL" badge appears the moment your foursome is set.</p>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">👥</div>
+          <h3>Saved Friend Groups</h3>
+          <p>Build your Saturday crew once. Invite them all with one tap every week after that.</p>
+        </div>
+        <div class="feature-item">
+          <div class="fi-icon">🔒</div>
+          <h3>Sign In Your Way</h3>
+          <p>Phone number, email, Sign in with Apple, or Google. One account, multiple sign-in options.</p>
+        </div>
+      </div>
+
+      <div class="legal-links">
+        <a href="/products/linkside/privacy.html">Privacy Policy</a>
+        <a href="/products/linkside/terms.html">Terms of Service</a>
+        <a href="/products/linkside/license.txt">License</a>
+      </div>
+
+    </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 JSO Solutions</p>
+      <nav class="footer-links"><a href="/about.html">About</a><a href="/services.html">Services</a><a href="/clients.html">Clients</a><a href="/products/index.html">Products</a><a href="/contact.html">Contact</a><a href="/products/linkside/terms.html">Legal</a></nav>
+      <p>&copy; 2026 JSO Solutions. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
 </body>
 </html>

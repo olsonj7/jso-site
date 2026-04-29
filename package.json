@@ -1,0 +1,12 @@
+{
+  "name": "jso-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "optimize-images": "node scripts/optimize-images.js"
+  },
+  "dependencies": {
+    "glob": "^8.1.0",
+    "sharp": "^0.32.4"
+  }
+}

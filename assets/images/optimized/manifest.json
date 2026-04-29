@@ -1,0 +1,65 @@
+{
+  "JSOSolutions1.jpg": [
+    {
+      "width": 320,
+      "jpg": "optimized/jsosolutions1-320w.jpg",
+      "webp": "optimized/jsosolutions1-320w.webp"
+    },
+    {
+      "width": 640,
+      "jpg": "optimized/jsosolutions1-640w.jpg",
+      "webp": "optimized/jsosolutions1-640w.webp"
+    },
+    {
+      "width": 1280,
+      "jpg": "optimized/jsosolutions1-1280w.jpg",
+      "webp": "optimized/jsosolutions1-1280w.webp"
+    },
+    {
+      "width": "orig",
+      "webp": "optimized/jsosolutions1-orig.webp"
+    }
+  ],
+  "Invoice_240_image_1_1.png": [
+    {
+      "width": 320,
+      "jpg": "optimized/invoice_240_image_1_1-320w.jpg",
+      "webp": "optimized/invoice_240_image_1_1-320w.webp"
+    },
+    {
+      "width": 640,
+      "jpg": "optimized/invoice_240_image_1_1-640w.jpg",
+      "webp": "optimized/invoice_240_image_1_1-640w.webp"
+    },
+    {
+      "width": 1280,
+      "jpg": "optimized/invoice_240_image_1_1-1280w.jpg",
+      "webp": "optimized/invoice_240_image_1_1-1280w.webp"
+    },
+    {
+      "width": "orig",
+      "webp": "optimized/invoice_240_image_1_1-orig.webp"
+    }
+  ],
+  "Invoice_240_page1.png": [
+    {
+      "width": 320,
+      "jpg": "optimized/invoice_240_page1-320w.jpg",
+      "webp": "optimized/invoice_240_page1-320w.webp"
+    },
+    {
+      "width": 640,
+      "jpg": "optimized/invoice_240_page1-640w.jpg",
+      "webp": "optimized/invoice_240_page1-640w.webp"
+    },
+    {
+      "width": 1280,
+      "jpg": "optimized/invoice_240_page1-1280w.jpg",
+      "webp": "optimized/invoice_240_page1-1280w.webp"
+    },
+    {
+      "width": "orig",
+      "webp": "optimized/invoice_240_page1-orig.webp"
+    }
+  ]
+}

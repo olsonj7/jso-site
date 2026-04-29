@@ -47,4 +47,4 @@ git push -u origin main
 ## Next steps I can take for you
 - Walk you through creating the GitHub repo and adding the secrets.
 - Walk you through the first manual FTP upload to confirm the site is live.
-- Apply branding (replace `assets/images/logo.svg` and color variables in `assets/css/style.css`) if you upload the invoice or logo image here.
+- Apply branding (replace `assets/images/JSOSolutions1.jpg` and color variables in `assets/css/style.css`) if you upload the invoice or logo image here.

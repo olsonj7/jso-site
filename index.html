@@ -3,58 +3,194 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>JSO Solutions — Home</title>
+  <title>JSO Solutions — IT Consulting, Data & AI</title>
+  <meta name="description" content="JSO Solutions delivers AI consulting, data warehouse modernization, iOS development, BI, and cloud services for enterprises." />
+  <link rel="canonical" href="https://www.jsotechsolutions.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.jsotechsolutions.com/" />
+  <meta property="og:title" content="JSO Solutions — IT Consulting, Data & AI" />
+  <meta property="og:description" content="Trusted by United Health Group, Optum, Disney, and more. Practical AI, data warehouse, BI, and iOS services for enterprises." />
+  <meta property="og:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="JSO Solutions — IT Consulting, Data & AI" />
+  <meta name="twitter:description" content="Trusted by United Health Group, Optum, Disney, and more." />
+  <meta name="twitter:image" content="https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg" />
   <link rel="stylesheet" href="/assets/css/style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "JSO Solutions",
+    "url": "https://www.jsotechsolutions.com",
+    "logo": "https://www.jsotechsolutions.com/assets/images/JSOSolutions1.jpg",
+    "description": "JSO Solutions delivers AI consulting, data warehouse design, business intelligence, iOS development, data integration, and modernization services.",
+    "email": "info@jsotechsolutions.com",
+    "areaServed": "US",
+    "serviceType": [
+      "AI Consulting",
+      "Data Warehouse Design",
+      "Business Intelligence",
+      "Data Integration",
+      "iOS Application Development",
+      "DW Modernization",
+      "Website Development"
+    ],
+    "sameAs": []
+  }
+  </script>
 </head>
 <body>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="/index.html">
-        <img src="/assets/images/logo.svg" alt="JSO Solutions logo" />
+        <picture>
+          <source type="image/webp" srcset="/assets/images/optimized/jsosolutions1-640w.webp 640w, /assets/images/optimized/jsosolutions1-320w.webp 320w" sizes="200px">
+          <img src="/assets/images/optimized/jsosolutions1-320w.jpg"
+               srcset="/assets/images/optimized/jsosolutions1-640w.jpg 2x"
+               alt="JSO Solutions" height="64" style="width:auto;">
+        </picture>
       </a>
-      <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-controls="main-nav" aria-expanded="false">&#9776;</button>
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
         <ul>
           <li><a href="/index.html">Home</a></li>
           <li><a href="/services.html">Services</a></li>
           <li><a href="/products/index.html">Products</a></li>
-          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/clients.html">Clients</a></li>
+          <li class="nav-cta"><a href="/contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="hero">
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero">
       <div class="container">
-        <h1>JSO Solutions</h1>
-        <p>Practical IT services and products that power small-to-medium businesses.</p>
-        <p><a class="btn" href="/services.html">Our Services</a></p>
+        <div class="hero-inner">
+          <span class="hero-eyebrow">IT Solutions &amp; Consulting</span>
+          <h1>Delivering <span>Results</span> Through Technology</h1>
+          <p>Enterprise-grade data, AI, cloud, and application services — built by a trusted partner with a track record across healthcare, finance, and media.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="/services.html">Explore Services</a>
+            <a class="btn btn-outline" href="/contact.html">Let's Talk</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="container">
-      <h2>What we do</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>Consulting</h3>
-          <p>Strategic IT consulting to align technology with business goals.</p>
-        </article>
-        <article class="card">
-          <h3>Managed Services</h3>
-          <p>Reliable managed operations and support for your infrastructure.</p>
-        </article>
-        <article class="card">
-          <h3>Products</h3>
-          <p>Tools and products designed to streamline workflows — see Linkside.</p>
-        </article>
+    <!-- Trusted by -->
+    <section class="section-clients" aria-label="Clients">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">Trusted By</span>
+          <h2>Organizations We've Supported</h2>
+        </div>
+        <ul class="client-list">
+          <li><img src="/assets/images/UHG(R)_RGB.jpg" alt="United Health Group" style="height:48px;width:auto;max-width:160px;" /></li>
+          <li><img src="/assets/images/Optum-logo-1536x864.png" alt="Optum" style="height:48px;width:auto;max-width:160px;" /></li>
+          <li><img src="/assets/images/RBC-Logo-1536x864.png" alt="RBC" style="height:48px;width:auto;max-width:160px;" /></li>
+          <li><img src="/assets/images/images.png" alt="Renters Warehouse" style="height:48px;width:auto;max-width:160px;" /></li>
+          <li><img src="/assets/images/Horizontal_Digital_Black_RGB.png" alt="Horizontal Integration" style="height:48px;width:auto;max-width:160px;" /></li>
+          <li><img src="/assets/images/Disney_iddEtLt1OH_1.png" alt="Disney" style="height:48px;width:auto;max-width:160px;" /></li>
+        </ul>
       </div>
     </section>
+
+    <!-- Services -->
+    <section class="section-services" aria-label="Services">
+      <div class="container">
+        <div class="section-heading">
+          <span class="eyebrow">What We Do</span>
+          <h2>Services Built for Enterprise Impact</h2>
+          <p>We combine hands-on engineering with strategic planning to deliver scalable, secure technology solutions.</p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon">🤖</div>
+            <h3>AI Consulting</h3>
+            <p>ML strategy, model selection, MLOps pipelines, and rapid proof-of-concepts that unlock real business value.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">📊</div>
+            <h3>Business Intelligence</h3>
+            <p>Dashboards, KPI frameworks, and self-service analytics that turn data into decisions.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🗄️</div>
+            <h3>Data Warehouse Design</h3>
+            <p>Cloud-native warehouse architecture, schema modeling, and end-to-end build &amp; delivery.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🔄</div>
+            <h3>Data Integration</h3>
+            <p>ETL/ELT pipelines, SaaS connectors, API integrations, and real-time streaming.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚀</div>
+            <h3>Modernization</h3>
+            <p>Data warehouse and integration modernization — cloud migrations, refactors, and cost optimization.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">📱</div>
+            <h3>iOS Applications</h3>
+            <p>Native iOS development, App Store delivery, and ongoing product lifecycle management.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+          <article class="card">
+            <div class="card-icon">🌐</div>
+            <h3>Website Build</h3>
+            <p>Modern, responsive websites and product landing pages — fast, accessible, and easy to maintain.</p>
+            <a class="card-link" href="/services.html">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA band -->
+    <section class="section-cta">
+      <div class="container">
+        <h2>Ready to move your technology forward?</h2>
+        <p>Reach out for a no-obligation conversation about your project or challenge.</p>
+        <a class="btn btn-primary" href="/contact.html">Get in Touch</a>
+      </div>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; 2026 JSO Solutions — <a href="/products/linkside/terms.html">Product legal</a></p>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <a href="/about.html">About</a>
+        <a href="/services.html">Services</a>
+        <a href="/clients.html">Clients</a>
+        <a href="/products/index.html">Products</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/products/linkside/terms.html">Legal</a>
+      </nav>
+      <p>&copy; 2026 JSO Solutions. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    (function(){
+      const btn = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('main-nav');
+      if(!btn || !nav) return;
+      btn.addEventListener('click', function(){
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+    })();
+  </script>
 </body>
 </html>
